@@ -128,12 +128,9 @@ defaults write io.github.marinadedduck.LightSpot SUFeedURL http://127.0.0.1:8765
 
 Then choose **Check for Updates…**. Afterwards, go back to the real feed with `defaults delete io.github.marinadedduck.LightSpot SUFeedURL`.
 
-## Still to do before 1.0
-
-- [ ] Screenshot or GIF for the README.
-
 ## Regenerating artwork
 
 - App icon: `LightSpot/AppIcon.icon`. Open it in Icon Composer (Xcode → Open Developer Tool), or edit the SVGs in `Assets/` directly.
 - GitHub social preview: `swift Design/render-social-preview.swift` writes `Design/social-preview.png` (1280×640). Upload it in the repo's Settings → General → Social preview. It uses `Design/icon-1024.png`, exported from the compiled `AppIcon.icns`; re-export that if the icon changes.
+- README demo: `swift Design/render-demo.swift build/demo-frames`, then `gifski --fps 30 --width 1312 --quality 90 -o Design/demo.gif build/demo-frames/*.png` (`brew install gifski`). It's a drawn animation, because macOS screen recordings leave out the menu bar and Spotlight.
 - DMG background: `swift Design/render-dmg-background.swift`. Icon positions in `scripts/dmg-settings.py` must match the layout in that script.

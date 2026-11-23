@@ -12,7 +12,9 @@ With Siri AI turned on, macOS 27 removes the Spotlight magnifying glass from the
 
 LightSpot adds a magnifying glass to the menu bar. Click it and the normal search bar opens, ready for typing.
 
-<!-- TODO: add a screenshot or GIF of the menu bar icon and the search bar -->
+<p align="center">
+  <img src="Design/demo.gif" width="820" alt="Clicking the LightSpot magnifying glass in the menu bar opens the Spotlight search bar, and typing Calendar searches for it">
+</p>
 
 ## Install
 
