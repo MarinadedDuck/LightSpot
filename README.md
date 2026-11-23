@@ -29,6 +29,17 @@ Requires macOS 27 or later.
 - **Open LightSpot again from Applications** to reach Settings. This is the way back in if the icon has been hidden in System Settings → Menu Bar.
 - From Shortcuts or a script, `open lightspot://open` opens the search bar and `open lightspot://settings` opens Settings.
 
+## Questions
+
+**Where did the Spotlight icon go in macOS 27?**
+When Siri AI is turned on, macOS 27 removes the Spotlight magnifying glass from the menu bar and puts a Siri button in its place. That button only starts voice input. ⌘Space still opens Spotlight, but there's nothing left to click. LightSpot adds a button back.
+
+**Does LightSpot replace Spotlight?**
+No. It opens Apple's own Spotlight search bar, the same one ⌘Space opens. Your results, settings and shortcuts don't change.
+
+**Is it free?**
+Yes. It's free and open source under the MIT license, with no ads, accounts or tracking. Releases are signed and notarized by Apple.
+
 ## Why does it need Accessibility permission?
 
 LightSpot opens the search bar by pressing your “Show Spotlight search” keyboard shortcut (⌘Space unless you've changed it) for you. macOS only lets an app send keystrokes if you allow it in **System Settings → Privacy & Security → Accessibility**.
