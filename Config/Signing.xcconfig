@@ -1,0 +1,17 @@
+// Code signing for LightSpot.
+//
+// By default builds are signed to run locally ("-"), so anyone can build from source without
+// an Apple developer account. macOS treats each locally signed build as a new app, so after
+// rebuilding you may need to turn LightSpot's Accessibility permission off and on again.
+//
+// To sign with your own team instead, create Config/Signing.local.xcconfig (git ignores it):
+//
+//     LIGHTSPOT_TEAM = YOURTEAMID
+//     LIGHTSPOT_SIGN_IDENTITY = Apple Development
+//
+// Official releases are signed with Developer ID at export time; see RELEASING.md.
+
+LIGHTSPOT_TEAM =
+LIGHTSPOT_SIGN_IDENTITY = -
+
+#include? "Signing.local.xcconfig"
